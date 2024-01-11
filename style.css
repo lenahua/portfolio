@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #2d3540;
+  color: white;
+}
+nav ul {
+  font-size: 22px;
+  list-style: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+nav ul li {
+  padding: 10px;
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+nav ul a::before {
+  content: "";
+  height: 4px;
+  background: white;
+  display: inline-block;
+  bottom: -6px;
+  width: 0;
+  transition: width 0.36s;
+}
+nav ul a:hover::before {
+  width: auto;
+}
+
+main .home {
+  width: 75%;
+  height: auto;
+  float: right;
+  background-color: burlywood;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .home .homeLeft {
+  background-color: aliceblue;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+main .home .homeLeft h3 {
+  width: 140px;
+  background-color: #2d3540;
+  color: aliceblue;
+  font-size: 22px;
+  border-radius: 50px 50px 50px 0;
+  padding: 10px;
+}
+main .home .homeLeft button {
+  width: 80px;
+  height: 30px;
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */
