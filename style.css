@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-nav {
-  position: absolute;
-  width: 25%;
-  height: 100%;
+.left {
+  position: fixed;
+  width: 200px;
+  height: 100vh;
   background-color: #2d3540;
   color: white;
 }
@@ -40,15 +40,16 @@ nav ul a:hover::before {
   width: auto;
 }
 
-main .home {
-  width: 75%;
+.right{
+  margin-left: 200px;
+  width: calc(100% - 200px);
   height: auto;
-  float: right;
   background-color: burlywood;
   display: flex;
   flex-wrap: wrap;
 }
-main .home .homeLeft {
+
+main .homeLeft {
   background-color: aliceblue;
   width: 60%;
   display: flex;
@@ -69,3 +70,12 @@ main .home .homeLeft button {
   height: 30px;
   margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
+
+.homeRight {
+  width: 40%;
+  background-color: #2d3540;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
